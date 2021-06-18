@@ -56,7 +56,7 @@ gdtr %>%
     add_sf(
         split = ~local_auth, # group by our regions
         alpha = 1, # non-transparent colors
-        stroke = I("#333333"), # color of the boundaries
+        stroke = I("#333333"), # color of the boundaries, probably also need to adjust this
         span = I(.1), # thickness of the boundaries
         color = ~n_100k, # the variable defining colors
         colors = "Blues",
